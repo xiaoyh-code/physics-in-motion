@@ -243,7 +243,7 @@ git commit -m "Revise lesson content"
 git push origin main
 ```
 
-部署流程採 [GitHub 官方 Pages workflow](https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages)：先檢查，再建立學生版，最後只把 `dist/` 作為網站 artifact 發佈。repository 首次需在 Settings → Pages 選 GitHub Actions；本次初始發佈會完成設定。日後正常更新毋須每次重設。
+部署流程採 [GitHub 官方 Pages workflow](https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages)：先檢查，再建立學生版，最後只把 `dist/` 作為網站 artifact 發佈。repository 首次需在 Settings → Pages 選 GitHub Actions；本次初始發佈已完成此設定，初次 Actions 檢查及部署已成功。日後正常更新毋須每次重設。
 
 ### 舊 Lesson ZIP 腳本
 

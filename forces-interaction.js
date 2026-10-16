@@ -12,6 +12,7 @@
   function refreshTools() {
     if(!tools)return;
     tools.hidden=!active();
+    if(live)live.hidden=!active();
     buttons.forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.chooseForce===selected)));
     rule.textContent=hold==='A'?'Moving R keeps A fixed and recalculates B.':'Moving R keeps B fixed and recalculates A.';
     $('forceHold').value=hold;

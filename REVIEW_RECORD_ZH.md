@@ -51,4 +51,10 @@ GitHub 發佈採[官方 custom Pages workflow](https://docs.github.com/en/pages/
 
 公開學生網站：<https://xiaoyh-code.github.io/physics-in-motion/>。
 
-本節在初次成功部署後記錄實際 Actions 與公開網站驗收結果。對照修訂歷史時，以 Git commit 及成功的 Actions 紀錄辨識版本；不把「已提交」當作「已上線」。
+初次部署 commit：`4314f7f54d2af49019fcc5b2a2ad7406e6f6be41`；[GitHub Actions 38848310183](https://github.com/xiaoyh-code/physics-in-motion/actions/runs/38848310183) 的 build／deploy 均成功。Pages 已設為 workflow 發佈，repository 為 public。
+
+實際公開 HTTPS 網址逐一載入 16 課，全部有場景、零 TeX 錯誤、零影片元素。第六課初始收起計算，3 秒時兩車各 +2 m/s、總動量 +8 kg m/s，展開後有六個帶正負動量棒；沒有教師上傳控制、頁面錯誤或失敗 HTTP 資源。公開 QP／MS、年度原始 DOCX、導讀頁均回傳 HTTP 200；DOCX SHA256 與原檔一致。Pearson Book 1／2 官方樣本連結亦各回傳 HTTP 200 及 PDF 檔頭。
+
+跨課切換的目視檢查另發現第四課的狀態提示會留在其他課下方；已修正提示的隱藏狀態，並補做第四課到第六課的來回切換驗證。此修訂和文件驗收記錄另存後續 commit。
+
+對照修訂歷史時，以 Git commit 及成功的 Actions 紀錄辨識版本；不把「已提交」當作「已上線」。
