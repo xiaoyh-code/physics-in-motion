@@ -1,0 +1,205 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="420mm" height="297mm" viewBox="0 0 1680 1188" role="img" aria-labelledby="map-title map-desc">
+<title id="map-title">2026/27 Physics school plan to Edexcel IAL course map</title>
+<desc id="map-desc">Editable seven-row map of the supplied Form 4 annual plan to selected Pearson Edexcel International Advanced Level Physics topics. The map describes planned objectives, not assessed mastery or complete IAL unit coverage. Current website interactives cover first-term mechanics and energy.</desc>
+
+<metadata id="verified-course-map-data">{&quot;title&quot;: &quot;2026/27 Physics: School Plan to Edexcel IAL&quot;, &quot;schoolYear&quot;: &quot;2026/27&quot;, &quot;checkedDate&quot;: &quot;2026-10-16&quot;, &quot;specification&quot;: &quot;2018 specification, Issue 3 (July 2021)&quot;, &quot;caveat&quot;: &quot;These are judgements about planned objectives, not completed teaching, assessment results or full IAL unit coverage. A matching topic title alone does not establish IAL depth, mathematical fluency or practical competence.&quot;, &quot;siteScope&quot;: &quot;The current 16 interactive lessons develop mechanics and energy. Later annual-plan blocks shown here are course destinations, not claims that their interactive lessons are already available.&quot;, &quot;extractionNote&quot;: &quot;Both ordinary Word text and Office Math runs were read in document order. The downloadable original is the authoritative school document. The map normalises topic names for comparison; it does not silently repair or replace the source document’s equations.&quot;, &quot;sources&quot;: {&quot;schoolPlan&quot;: {&quot;title&quot;: &quot;Original 2026/27 Physics Annual Teaching Plan&quot;, &quot;originalFilename&quot;: &quot;2627_PHY_Annual_Teaching_Plan_0828_F4BC.docx&quot;, &quot;url&quot;: &quot;resources/curriculum/2026-2027_Physics_Annual_Teaching_Plan.docx&quot;, &quot;pdfUrl&quot;: &quot;resources/curriculum/2026-2027_Physics_Annual_Teaching_Plan.pdf&quot;, &quot;description&quot;: &quot;Teacher-supplied document; evidence quotations refer to its teaching schedule and content headings.&quot;}, &quot;ialSpecification&quot;: {&quot;title&quot;: &quot;Pearson Edexcel IAL Physics 2018 specification, Issue 3&quot;, &quot;url&quot;: &quot;https://qualifications.pearson.com/content/dam/pdf/International%20Advanced%20Level/Physics/2018/Specification%20and%20Sample%20Assessment/9781446957783_IAL_Physics_Iss3.pdf&quot;, &quot;description&quot;: &quot;Official specification statements are the basis for the topic references. Printed page numbers are used.&quot;}}, &quot;classifications&quot;: {&quot;substantial&quot;: {&quot;label&quot;: &quot;Substantial topic match&quot;, &quot;description&quot;: &quot;The plan explicitly includes the main ideas or equations of the identified IAL topic. This is not a claim that the whole unit or every assessment skill is covered.&quot;}, &quot;partial&quot;: {&quot;label&quot;: &quot;Partial match&quot;, &quot;description&quot;: &quot;Some relevant objectives are explicit, but the IAL treatment needs further concepts, mathematical development or evidence of the stated method.&quot;}, &quot;extra&quot;: {&quot;label&quot;: &quot;Additional foundation&quot;, &quot;description&quot;: &quot;Useful school-course content or background, without a direct match to the named IAL requirement at the depth stated in the plan.&quot;}, &quot;not_listed&quot;: {&quot;label&quot;: &quot;Not listed in plan&quot;, &quot;description&quot;: &quot;The annual plan does not explicitly state this IAL requirement. This records an evidence gap, not proof that it will never be taught.&quot;}}, &quot;summaryRows&quot;: [{&quot;id&quot;: &quot;mechanics&quot;, &quot;weeks&quot;: &quot;1-10&quot;, &quot;schoolFocus&quot;: &quot;Motion, forces, momentum and moments&quot;, &quot;ialLink&quot;: &quot;Selected Unit 1 mechanics + Unit 4 momentum&quot;, &quot;classification&quot;: &quot;substantial&quot;, &quot;judgement&quot;: &quot;Substantial topic match&quot;, &quot;nextStep&quot;: &quot;Make graph skills and projectile coverage explicit.&quot;, &quot;schoolTopic&quot;: &quot;Motion, forces, momentum and moments&quot;, &quot;ialUnits&quot;: &quot;Units 1 and 4&quot;, &quot;ialTopics&quot;: &quot;Selected mechanics, impulse and collision topics&quot;, &quot;limits&quot;: &quot;Make graph skills and projectile coverage explicit.&quot;}, {&quot;id&quot;: &quot;energy&quot;, &quot;weeks&quot;: &quot;11-17&quot;, &quot;schoolFocus&quot;: &quot;Energy, work, power and resources&quot;, &quot;ialLink&quot;: &quot;Unit 1 energy and efficiency&quot;, &quot;classification&quot;: &quot;substantial&quot;, &quot;judgement&quot;: &quot;Substantial topic match&quot;, &quot;nextStep&quot;: &quot;Develop angled-force work and quantitative applications.&quot;, &quot;schoolTopic&quot;: &quot;Energy, work, power and resources&quot;, &quot;ialUnits&quot;: &quot;Unit 1&quot;, &quot;ialTopics&quot;: &quot;Energy, work, power and efficiency (17-22)&quot;, &quot;limits&quot;: &quot;Develop angled-force work and quantitative applications.&quot;}, {&quot;id&quot;: &quot;waves&quot;, &quot;weeks&quot;: &quot;21-26&quot;, &quot;schoolFocus&quot;: &quot;Waves, light, sound and Doppler effect&quot;, &quot;ialLink&quot;: &quot;Selected Unit 2 waves + Unit 5 Doppler&quot;, &quot;classification&quot;: &quot;partial&quot;, &quot;judgement&quot;: &quot;Partial match&quot;, &quot;nextStep&quot;: &quot;Add interference, diffraction, polarisation and quantum physics.&quot;, &quot;schoolTopic&quot;: &quot;Waves, light, sound and Doppler effect&quot;, &quot;ialUnits&quot;: &quot;Units 2 and 5&quot;, &quot;ialTopics&quot;: &quot;Basic waves, refraction, TIR and qualitative Doppler&quot;, &quot;limits&quot;: &quot;Add interference, diffraction, polarisation and quantum physics.&quot;}, {&quot;id&quot;: &quot;density&quot;, &quot;weeks&quot;: &quot;27-31&quot;, &quot;schoolFocus&quot;: &quot;Density, pressure and hydrostatics&quot;, &quot;ialLink&quot;: &quot;Unit 1 density; pressure is additional foundation&quot;, &quot;classification&quot;: &quot;partial&quot;, &quot;judgement&quot;: &quot;Partial match&quot;, &quot;nextStep&quot;: &quot;Add upthrust, viscosity and solid-material mechanics.&quot;, &quot;schoolTopic&quot;: &quot;Density, pressure and hydrostatics&quot;, &quot;ialUnits&quot;: &quot;Unit 1&quot;, &quot;ialTopics&quot;: &quot;Density (23); pressure as additional foundation&quot;, &quot;limits&quot;: &quot;Add upthrust, viscosity and solid-material mechanics.&quot;}, {&quot;id&quot;: &quot;thermal-transfer&quot;, &quot;weeks&quot;: &quot;31-36&quot;, &quot;schoolFocus&quot;: &quot;Conduction, convection and radiation&quot;, &quot;ialLink&quot;: &quot;Foundation for thermal and radiation study&quot;, &quot;classification&quot;: &quot;extra&quot;, &quot;judgement&quot;: &quot;Additional foundation&quot;, &quot;nextStep&quot;: &quot;Do not equate this with Unit 5 thermodynamics.&quot;, &quot;schoolTopic&quot;: &quot;Conduction, convection and radiation&quot;, &quot;ialUnits&quot;: &quot;Foundation&quot;, &quot;ialTopics&quot;: &quot;Conduction, convection and radiation&quot;, &quot;limits&quot;: &quot;Do not equate this with Unit 5 thermodynamics.&quot;}, {&quot;id&quot;: &quot;thermal-gases&quot;, &quot;weeks&quot;: &quot;36-42&quot;, &quot;schoolFocus&quot;: &quot;Heat, internal energy and ideal gases&quot;, &quot;ialLink&quot;: &quot;Unit 5 thermodynamics: 125, 128-130, 132&quot;, &quot;classification&quot;: &quot;substantial&quot;, &quot;judgement&quot;: &quot;Substantial topic match&quot;, &quot;nextStep&quot;: &quot;Verify derivations and specified practical methods.&quot;, &quot;schoolTopic&quot;: &quot;Heat, internal energy and ideal gases&quot;, &quot;ialUnits&quot;: &quot;Unit 5&quot;, &quot;ialTopics&quot;: &quot;Thermodynamics (125, 128-130, 132)&quot;, &quot;limits&quot;: &quot;Verify derivations and specified practical methods.&quot;}, {&quot;id&quot;: &quot;practical-assessment&quot;, &quot;weeks&quot;: &quot;Across year; 43-44&quot;, &quot;schoolFocus&quot;: &quot;Practical work, review and examination&quot;, &quot;ialLink&quot;: &quot;Units 3 and 6 practical skills need explicit evidence&quot;, &quot;classification&quot;: &quot;partial&quot;, &quot;judgement&quot;: &quot;Partial match&quot;, &quot;nextStep&quot;: &quot;Teach planning, graphs, uncertainty and evaluation throughout.&quot;, &quot;schoolTopic&quot;: &quot;Practical work, review and examination&quot;, &quot;ialUnits&quot;: &quot;Units 3 and 6&quot;, &quot;ialTopics&quot;: &quot;Experimental methods and analysis skills&quot;, &quot;limits&quot;: &quot;Teach planning, graphs, uncertainty and evaluation throughout.&quot;}], &quot;summaryGapNote&quot;: &quot;Further teaching is needed for Unit 1 materials, Unit 2 circuits and advanced wave/quantum topics, the remaining Unit 4 and Unit 5 topics, and Units 3/6 practical methods. No complete IAL unit is certified by this map.&quot;}</metadata>
+<rect width="1680" height="1188" fill="white"/>
+<text x="56" y="55" fill="#1757bd" font-family="Avenir Next, DejaVu Sans, sans-serif" font-size="19" font-weight="600" text-anchor="start">FORM 4  /  ANNUAL COURSE MAP</text>
+<text x="1624" y="55" fill="#53647a" font-family="Avenir Next, DejaVu Sans, sans-serif" font-size="17" font-weight="400" text-anchor="end">SOURCE AUDIT  ·  16 OCTOBER 2026</text>
+<text x="56" y="120" fill="#172e4d" font-family="Avenir Next, DejaVu Sans, sans-serif" font-size="55" font-weight="600" text-anchor="start">2026/27 Physics</text>
+<text x="56" y="165" fill="#172e4d" font-family="Avenir Next, DejaVu Sans, sans-serif" font-size="31" font-weight="400" text-anchor="start">School plan → Edexcel International A Level</text>
+<text x="56" y="207" fill="#53647a" font-family="Avenir Next, DejaVu Sans, sans-serif" font-size="20" font-weight="400" text-anchor="start">Basis: the original school annual plan and Pearson IAL Physics 2018 specification, Issue 3 (July 2021).</text>
+<line x1="56" y1="231" x2="130" y2="231" stroke="#b52643" stroke-width="4"/>
+<text x="1624" y="217" fill="#1757bd" font-family="Avenir Next, DejaVu Sans, sans-serif" font-size="16" font-weight="600" text-anchor="end">SELECTED TOPIC ALIGNMENT</text>
+<text x="56" y="276" fill="#53647a" font-family="Avenir Next, DejaVu Sans, sans-serif" font-size="17" font-weight="600" text-anchor="start">WEEKS</text>
+<text x="198" y="276" fill="#53647a" font-family="Avenir Next, DejaVu Sans, sans-serif" font-size="17" font-weight="600" text-anchor="start">SCHOOL PLAN FOCUS</text>
+<text x="552" y="276" fill="#53647a" font-family="Avenir Next, DejaVu Sans, sans-serif" font-size="17" font-weight="600" text-anchor="start">SELECTED IAL LINKS</text>
+<text x="936" y="276" fill="#53647a" font-family="Avenir Next, DejaVu Sans, sans-serif" font-size="17" font-weight="600" text-anchor="start">TOPIC JUDGEMENT</text>
+<text x="1180" y="276" fill="#53647a" font-family="Avenir Next, DejaVu Sans, sans-serif" font-size="17" font-weight="600" text-anchor="start">NEXT DEVELOPMENT</text>
+<line x1="56" y1="294" x2="1624" y2="294" stroke="#172e4d" stroke-width="1.5"/>
+<g id="course-block-mechanics" aria-label="1-10; Motion, forces, momentum and moments; Selected Unit 1 mechanics + Unit 4 momentum; Substantial topic match; Make graph skills and projectile coverage explicit.">
+<rect x="56" y="303" width="1568" height="86" fill="#f1f5fb"/>
+<rect x="56" y="303" width="4" height="86" fill="#1757bd"/>
+<text x="72" y="356" fill="#172e4d" font-family="Avenir Next, DejaVu Sans, sans-serif" font-size="29" font-weight="600" text-anchor="start">1–10</text>
+<text id="focus-mechanics" x="198" y="340.26" fill="#172e4d" font-family="Avenir Next, DejaVu Sans, sans-serif" font-size="22" font-weight="600">
+<tspan x="198" dy="0">Motion, forces, momentum and</tspan>
+<tspan x="198" dy="26">moments</tspan>
+</text>
+<text id="ial-mechanics" x="552" y="340.1" fill="#1757bd" font-family="Avenir Next, DejaVu Sans, sans-serif" font-size="20" font-weight="400">
+<tspan x="552" dy="0">Selected Unit 1 mechanics + Unit 4</tspan>
+<tspan x="552" dy="25">momentum</tspan>
+</text>
+<circle cx="946" cy="346.0" r="5" fill="#1757bd"/>
+<text id="match-mechanics" x="964" y="340.6" fill="#1757bd" font-family="Avenir Next, DejaVu Sans, sans-serif" font-size="20" font-weight="600">
+<tspan x="964" dy="0">Substantial topic</tspan>
+<tspan x="964" dy="24">match</tspan>
+</text>
+<text id="development-mechanics" x="1180" y="340.1" fill="#172e4d" font-family="Avenir Next, DejaVu Sans, sans-serif" font-size="20" font-weight="400">
+<tspan x="1180" dy="0">Make graph skills and projectile coverage</tspan>
+<tspan x="1180" dy="25">explicit.</tspan>
+</text>
+<line x1="56" y1="389" x2="1624" y2="389" stroke="#dce3ec" stroke-width="1"/>
+</g>
+<g id="course-block-energy" aria-label="11-17; Energy, work, power and resources; Unit 1 energy and efficiency; Substantial topic match; Develop angled-force work and quantitative applications.">
+<rect x="56" y="389" width="4" height="86" fill="#1757bd"/>
+<text x="72" y="442" fill="#172e4d" font-family="Avenir Next, DejaVu Sans, sans-serif" font-size="29" font-weight="600" text-anchor="start">11–17</text>
+<text id="focus-energy" x="198" y="426.26" fill="#172e4d" font-family="Avenir Next, DejaVu Sans, sans-serif" font-size="22" font-weight="600">
+<tspan x="198" dy="0">Energy, work, power and</tspan>
+<tspan x="198" dy="26">resources</tspan>
+</text>
+<text id="ial-energy" x="552" y="438.6" fill="#1757bd" font-family="Avenir Next, DejaVu Sans, sans-serif" font-size="20" font-weight="400">
+<tspan x="552" dy="0">Unit 1 energy and efficiency</tspan>
+</text>
+<circle cx="946" cy="432.0" r="5" fill="#1757bd"/>
+<text id="match-energy" x="964" y="426.6" fill="#1757bd" font-family="Avenir Next, DejaVu Sans, sans-serif" font-size="20" font-weight="600">
+<tspan x="964" dy="0">Substantial topic</tspan>
+<tspan x="964" dy="24">match</tspan>
+</text>
+<text id="development-energy" x="1180" y="426.1" fill="#172e4d" font-family="Avenir Next, DejaVu Sans, sans-serif" font-size="20" font-weight="400">
+<tspan x="1180" dy="0">Develop angled-force work and quantitative</tspan>
+<tspan x="1180" dy="25">applications.</tspan>
+</text>
+<line x1="56" y1="475" x2="1624" y2="475" stroke="#dce3ec" stroke-width="1"/>
+</g>
+<g id="course-block-waves" aria-label="21-26; Waves, light, sound and Doppler effect; Selected Unit 2 waves + Unit 5 Doppler; Partial match; Add interference, diffraction, polarisation and quantum physics.">
+<rect x="56" y="475" width="1568" height="86" fill="#f1f5fb"/>
+<rect x="56" y="475" width="4" height="86" fill="#dce3ec"/>
+<text x="72" y="528" fill="#172e4d" font-family="Avenir Next, DejaVu Sans, sans-serif" font-size="29" font-weight="600" text-anchor="start">21–26</text>
+<text id="focus-waves" x="198" y="512.26" fill="#172e4d" font-family="Avenir Next, DejaVu Sans, sans-serif" font-size="22" font-weight="600">
+<tspan x="198" dy="0">Waves, light, sound and</tspan>
+<tspan x="198" dy="26">Doppler effect</tspan>
+</text>
+<text id="ial-waves" x="552" y="524.6" fill="#1757bd" font-family="Avenir Next, DejaVu Sans, sans-serif" font-size="20" font-weight="400">
+<tspan x="552" dy="0">Selected Unit 2 waves + Unit 5 Doppler</tspan>
+</text>
+<circle cx="946" cy="518.0" r="5" fill="white" stroke="#b52643" stroke-width="2"/>
+<text id="match-waves" x="964" y="524.6" fill="#b52643" font-family="Avenir Next, DejaVu Sans, sans-serif" font-size="20" font-weight="600">
+<tspan x="964" dy="0">Partial match</tspan>
+</text>
+<text id="development-waves" x="1180" y="512.1" fill="#172e4d" font-family="Avenir Next, DejaVu Sans, sans-serif" font-size="20" font-weight="400">
+<tspan x="1180" dy="0">Add interference, diffraction, polarisation and</tspan>
+<tspan x="1180" dy="25">quantum physics.</tspan>
+</text>
+<line x1="56" y1="561" x2="1624" y2="561" stroke="#dce3ec" stroke-width="1"/>
+</g>
+<g id="course-block-density" aria-label="27-31; Density, pressure and hydrostatics; Unit 1 density; pressure is additional foundation; Partial match; Add upthrust, viscosity and solid-material mechanics.">
+<rect x="56" y="561" width="4" height="86" fill="#dce3ec"/>
+<text x="72" y="614" fill="#172e4d" font-family="Avenir Next, DejaVu Sans, sans-serif" font-size="29" font-weight="600" text-anchor="start">27–31</text>
+<text id="focus-density" x="198" y="598.26" fill="#172e4d" font-family="Avenir Next, DejaVu Sans, sans-serif" font-size="22" font-weight="600">
+<tspan x="198" dy="0">Density, pressure and</tspan>
+<tspan x="198" dy="26">hydrostatics</tspan>
+</text>
+<text id="ial-density" x="552" y="598.1" fill="#1757bd" font-family="Avenir Next, DejaVu Sans, sans-serif" font-size="20" font-weight="400">
+<tspan x="552" dy="0">Unit 1 density; pressure is additional</tspan>
+<tspan x="552" dy="25">foundation</tspan>
+</text>
+<circle cx="946" cy="604.0" r="5" fill="white" stroke="#b52643" stroke-width="2"/>
+<text id="match-density" x="964" y="610.6" fill="#b52643" font-family="Avenir Next, DejaVu Sans, sans-serif" font-size="20" font-weight="600">
+<tspan x="964" dy="0">Partial match</tspan>
+</text>
+<text id="development-density" x="1180" y="598.1" fill="#172e4d" font-family="Avenir Next, DejaVu Sans, sans-serif" font-size="20" font-weight="400">
+<tspan x="1180" dy="0">Add upthrust, viscosity and solid-material</tspan>
+<tspan x="1180" dy="25">mechanics.</tspan>
+</text>
+<line x1="56" y1="647" x2="1624" y2="647" stroke="#dce3ec" stroke-width="1"/>
+</g>
+<g id="course-block-thermal-transfer" aria-label="31-36; Conduction, convection and radiation; Foundation for thermal and radiation study; Additional foundation; Do not equate this with Unit 5 thermodynamics.">
+<rect x="56" y="647" width="1568" height="86" fill="#f1f5fb"/>
+<rect x="56" y="647" width="4" height="86" fill="#dce3ec"/>
+<text x="72" y="700" fill="#172e4d" font-family="Avenir Next, DejaVu Sans, sans-serif" font-size="29" font-weight="600" text-anchor="start">31–36</text>
+<text id="focus-thermal-transfer" x="198" y="684.26" fill="#172e4d" font-family="Avenir Next, DejaVu Sans, sans-serif" font-size="22" font-weight="600">
+<tspan x="198" dy="0">Conduction, convection and</tspan>
+<tspan x="198" dy="26">radiation</tspan>
+</text>
+<text id="ial-thermal-transfer" x="552" y="684.1" fill="#1757bd" font-family="Avenir Next, DejaVu Sans, sans-serif" font-size="20" font-weight="400">
+<tspan x="552" dy="0">Foundation for thermal and radiation</tspan>
+<tspan x="552" dy="25">study</tspan>
+</text>
+<path d="M 946 684.0 L 952 690.0 L 946 696.0 L 940 690.0 Z" fill="white" stroke="#53647a" stroke-width="2"/>
+<text id="match-thermal-transfer" x="964" y="684.6" fill="#53647a" font-family="Avenir Next, DejaVu Sans, sans-serif" font-size="20" font-weight="600">
+<tspan x="964" dy="0">Additional</tspan>
+<tspan x="964" dy="24">foundation</tspan>
+</text>
+<text id="development-thermal-transfer" x="1180" y="684.1" fill="#172e4d" font-family="Avenir Next, DejaVu Sans, sans-serif" font-size="20" font-weight="400">
+<tspan x="1180" dy="0">Do not equate this with Unit 5</tspan>
+<tspan x="1180" dy="25">thermodynamics.</tspan>
+</text>
+<line x1="56" y1="733" x2="1624" y2="733" stroke="#dce3ec" stroke-width="1"/>
+</g>
+<g id="course-block-thermal-gases" aria-label="36-42; Heat, internal energy and ideal gases; Unit 5 thermodynamics: 125, 128-130, 132; Substantial topic match; Verify derivations and specified practical methods.">
+<rect x="56" y="733" width="4" height="86" fill="#dce3ec"/>
+<text x="72" y="786" fill="#172e4d" font-family="Avenir Next, DejaVu Sans, sans-serif" font-size="29" font-weight="600" text-anchor="start">36–42</text>
+<text id="focus-thermal-gases" x="198" y="770.26" fill="#172e4d" font-family="Avenir Next, DejaVu Sans, sans-serif" font-size="22" font-weight="600">
+<tspan x="198" dy="0">Heat, internal energy and ideal</tspan>
+<tspan x="198" dy="26">gases</tspan>
+</text>
+<text id="ial-thermal-gases" x="552" y="770.1" fill="#1757bd" font-family="Avenir Next, DejaVu Sans, sans-serif" font-size="20" font-weight="400">
+<tspan x="552" dy="0">Unit 5 thermodynamics: 125, 128-130,</tspan>
+<tspan x="552" dy="25">132</tspan>
+</text>
+<circle cx="946" cy="776.0" r="5" fill="#1757bd"/>
+<text id="match-thermal-gases" x="964" y="770.6" fill="#1757bd" font-family="Avenir Next, DejaVu Sans, sans-serif" font-size="20" font-weight="600">
+<tspan x="964" dy="0">Substantial topic</tspan>
+<tspan x="964" dy="24">match</tspan>
+</text>
+<text id="development-thermal-gases" x="1180" y="770.1" fill="#172e4d" font-family="Avenir Next, DejaVu Sans, sans-serif" font-size="20" font-weight="400">
+<tspan x="1180" dy="0">Verify derivations and specified practical</tspan>
+<tspan x="1180" dy="25">methods.</tspan>
+</text>
+<line x1="56" y1="819" x2="1624" y2="819" stroke="#dce3ec" stroke-width="1"/>
+</g>
+<g id="course-block-practical-assessment" aria-label="Across year; 43-44; Practical work, review and examination; Units 3 and 6 practical skills need explicit evidence; Partial match; Teach planning, graphs, uncertainty and evaluation throughout.">
+<rect x="56" y="819" width="1568" height="86" fill="#f1f5fb"/>
+<rect x="56" y="819" width="4" height="86" fill="#dce3ec"/>
+<text x="72" y="853" fill="#172e4d" font-family="Avenir Next, DejaVu Sans, sans-serif" font-size="18" font-weight="600">
+<tspan x="72" dy="0">Across year;</tspan>
+<tspan x="72" dy="25">43–44</tspan>
+</text>
+<text id="focus-practical-assessment" x="198" y="856.26" fill="#172e4d" font-family="Avenir Next, DejaVu Sans, sans-serif" font-size="22" font-weight="600">
+<tspan x="198" dy="0">Practical work, review and</tspan>
+<tspan x="198" dy="26">examination</tspan>
+</text>
+<text id="ial-practical-assessment" x="552" y="856.1" fill="#1757bd" font-family="Avenir Next, DejaVu Sans, sans-serif" font-size="20" font-weight="400">
+<tspan x="552" dy="0">Units 3 and 6 practical skills need</tspan>
+<tspan x="552" dy="25">explicit evidence</tspan>
+</text>
+<circle cx="946" cy="862.0" r="5" fill="white" stroke="#b52643" stroke-width="2"/>
+<text id="match-practical-assessment" x="964" y="868.6" fill="#b52643" font-family="Avenir Next, DejaVu Sans, sans-serif" font-size="20" font-weight="600">
+<tspan x="964" dy="0">Partial match</tspan>
+</text>
+<text id="development-practical-assessment" x="1180" y="856.1" fill="#172e4d" font-family="Avenir Next, DejaVu Sans, sans-serif" font-size="20" font-weight="400">
+<tspan x="1180" dy="0">Teach planning, graphs, uncertainty and</tspan>
+<tspan x="1180" dy="25">evaluation throughout.</tspan>
+</text>
+<line x1="56" y1="905" x2="1624" y2="905" stroke="#dce3ec" stroke-width="1"/>
+</g>
+<line x1="56" y1="934" x2="1624" y2="934" stroke="#172e4d" stroke-width="1.2"/>
+<text x="56" y="971" fill="#1757bd" font-family="Avenir Next, DejaVu Sans, sans-serif" font-size="17" font-weight="600" text-anchor="start">HOW TO READ THE JUDGEMENT</text>
+<text x="56" y="1003" fill="#172e4d" font-family="Avenir Next, DejaVu Sans, sans-serif" font-size="18" font-weight="400" text-anchor="start">Substantial: main ideas are explicitly listed.</text>
+<text x="56" y="1030" fill="#172e4d" font-family="Avenir Next, DejaVu Sans, sans-serif" font-size="18" font-weight="400" text-anchor="start">Partial: further IAL depth or evidence is needed.</text>
+<text x="56" y="1057" fill="#172e4d" font-family="Avenir Next, DejaVu Sans, sans-serif" font-size="18" font-weight="400" text-anchor="start">Foundation: useful supporting school content.</text>
+<text x="56" y="1084" fill="#172e4d" font-family="Avenir Next, DejaVu Sans, sans-serif" font-size="18" font-weight="400" text-anchor="start">Planned objectives do not certify assessed mastery.</text>
+<text x="576" y="971" fill="#1757bd" font-family="Avenir Next, DejaVu Sans, sans-serif" font-size="17" font-weight="600" text-anchor="start">CURRENT INTERACTIVE SCOPE</text>
+<text x="576" y="1003" fill="#172e4d" font-family="Avenir Next, DejaVu Sans, sans-serif" font-size="18" font-weight="400" text-anchor="start">16 first-term lessons cover mechanics and energy.</text>
+<text x="576" y="1030" fill="#172e4d" font-family="Avenir Next, DejaVu Sans, sans-serif" font-size="18" font-weight="400" text-anchor="start">Later annual blocks are course destinations.</text>
+<text x="576" y="1057" fill="#172e4d" font-family="Avenir Next, DejaVu Sans, sans-serif" font-size="18" font-weight="400" text-anchor="start">A topic title alone does not establish IAL depth,</text>
+<text x="576" y="1084" fill="#172e4d" font-family="Avenir Next, DejaVu Sans, sans-serif" font-size="18" font-weight="400" text-anchor="start">mathematical fluency or practical competence.</text>
+<text x="1096" y="971" fill="#b52643" font-family="Avenir Next, DejaVu Sans, sans-serif" font-size="17" font-weight="600" text-anchor="start">FURTHER IAL TEACHING NEEDED</text>
+<text x="1096" y="1003" fill="#172e4d" font-family="Avenir Next, DejaVu Sans, sans-serif" font-size="18" font-weight="400" text-anchor="start">Unit 1 materials; Unit 2 circuits and advanced</text>
+<text x="1096" y="1030" fill="#172e4d" font-family="Avenir Next, DejaVu Sans, sans-serif" font-size="18" font-weight="400" text-anchor="start">waves/quantum; remaining Unit 4 and 5 topics;</text>
+<text x="1096" y="1057" fill="#172e4d" font-family="Avenir Next, DejaVu Sans, sans-serif" font-size="18" font-weight="400" text-anchor="start">and Units 3/6 practical methods.</text>
+<text x="1096" y="1084" fill="#172e4d" font-family="Avenir Next, DejaVu Sans, sans-serif" font-size="18" font-weight="400" text-anchor="start">No complete IAL unit is certified by this map.</text>
+<line x1="56" y1="1109" x2="1624" y2="1109" stroke="#dce3ec" stroke-width="1"/>
+<text x="56" y="1135" fill="#53647a" font-family="Avenir Next, DejaVu Sans, sans-serif" font-size="15" font-weight="600" text-anchor="start">SOURCES</text>
+<a xlink:href="2026-2027_Physics_Annual_Teaching_Plan.docx" target="_blank">
+<text x="146" y="1135" fill="#1757bd" font-family="Avenir Next, DejaVu Sans, sans-serif" font-size="16" font-weight="400" text-anchor="start">Original school plan DOCX</text>
+</a>
+<line x1="146" y1="1139" x2="337" y2="1139" stroke="#1757bd" stroke-width="0.8"/>
+<text x="368" y="1135" fill="#53647a" font-family="Avenir Next, DejaVu Sans, sans-serif" font-size="16" font-weight="400" text-anchor="start">·</text>
+<a xlink:href="https://qualifications.pearson.com/content/dam/pdf/International%20Advanced%20Level/Physics/2018/Specification%20and%20Sample%20Assessment/9781446957783_IAL_Physics_Iss3.pdf" target="_blank">
+<text x="390" y="1135" fill="#1757bd" font-family="Avenir Next, DejaVu Sans, sans-serif" font-size="16" font-weight="400" text-anchor="start">Pearson Edexcel IAL Physics · 2018 specification · Issue 3 (July 2021)</text>
+</a>
+<line x1="390" y1="1139" x2="898" y2="1139" stroke="#1757bd" stroke-width="0.8"/>
+<text x="1624" y="1135" fill="#53647a" font-family="Avenir Next, DejaVu Sans, sans-serif" font-size="16" font-weight="400" text-anchor="end">Original DOCX remains authoritative.</text>
+<text x="56" y="1159" fill="#53647a" font-family="Avenir Next, DejaVu Sans, sans-serif" font-size="15" font-weight="400" text-anchor="start">Topic names are normalised for comparison; the source document’s equations are not silently corrected or replaced.</text>
+</svg>

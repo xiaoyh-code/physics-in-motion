@@ -1,0 +1,21 @@
+[
+  {
+    "id": "worksheet",
+    "title": "Lesson 1 sample worksheet",
+    "pdf": "Lesson_01_Velocity_Time_QP.pdf",
+    "source": "Lesson_01_Velocity_Time_QP.typ",
+    "pages": 3,
+    "marks": 20,
+    "description": "Original Edexcel IAL bridge practice: multiple choice, fill in the blanks, derivations, reversal and uncertainty.",
+    "previews": ["worksheet-page-01.png", "worksheet-page-02.png", "worksheet-page-03.png"]
+  },
+  {
+    "id": "answers",
+    "title": "Answers and marking scheme",
+    "pdf": "Lesson_01_Velocity_Time_MS.pdf",
+    "source": "Lesson_01_Velocity_Time_MS.typ",
+    "pages": 2,
+    "description": "Worked solutions, distinct marking points and explanations of signed area and measurement uncertainty.",
+    "previews": ["answers-page-01.png", "answers-page-02.png"]
+  }
+]

@@ -1,0 +1,29 @@
+/* Arial for all ordinary website content; KaTeX retains its mathematical glyphs. */
+:root{--visual-text-font:Arial,Helvetica,sans-serif;--visual-math-font:Arial,Helvetica,sans-serif}
+body,button,input,select,textarea{font-family:Arial,Helvetica,sans-serif}
+.katex .text,.katex .textrm,.katex .textsf{font-family:Arial,Helvetica,sans-serif}
+.svg-tex{overflow:visible;pointer-events:none}
+.svg-tex .katex{font-size:1em;line-height:1.2;color:inherit}
+.visual-math-typeset{font-family:Arial,Helvetica,sans-serif}
+.topic-heading h1,.motion-live-lab .panel-top h2,.lesson-introduction h2,.course-overview h1,.course-overview h2,.course-overview h3{font-family:var(--visual-text-font);letter-spacing:-.015em}
+.topic-heading h1{font-size:clamp(2rem,3vw,2.75rem);line-height:1.15}
+#scene text,#scene.motion-visual text{font-family:var(--visual-text-font)}
+#scene.motion-visual{background:#000;border-color:#263547}
+.lesson-introduction{margin:0 0 28px;padding:22px 24px 20px;border-left:2px solid var(--blue);background:#f6f8fc;max-width:100%}
+.lesson-introduction h2{font-size:1.375rem;margin:0 0 10px}
+.lesson-why{font:1.125rem/1.6 var(--visual-text-font);margin:0 0 14px;max-width:90ch}
+.lesson-question{margin:0;color:var(--blue);font-size:.9375rem;max-width:85ch}
+.lesson-introduction details{margin:16px 0 0;padding:12px 0 0;background:none}
+.lesson-introduction summary{font-size:.875rem;min-height:36px}
+.lesson-targets{padding-left:1.25rem;margin:8px 0 14px;font-size:.9375rem}
+.lesson-targets li{margin:6px 0}
+.lesson-sources{display:flex;flex-wrap:wrap;gap:8px 20px;font-size:.8125rem}
+.lesson-sources a{padding:6px 0;text-decoration:underline}
+.course-nav{display:block;margin:0 0 20px;padding:12px;border:1px solid var(--line);font-size:.9375rem;color:var(--ink);text-decoration:none;line-height:1.5}
+.course-nav small{display:block;font-size:.75rem;color:var(--muted)}
+.course-nav:hover{background:var(--mint);border-color:var(--blue)}
+.course-entry{display:flex;align-items:center;justify-content:space-between;gap:16px;margin:0 0 24px;padding:12px 16px;border-block:1px solid var(--line);font-size:.875rem;background:var(--canvas)}
+.course-entry a{color:var(--blue);font-weight:700;text-decoration:none;min-height:36px;display:inline-flex;align-items:center}
+.course-entry span{color:var(--muted);font-size:.8125rem}
+@media(max-width:760px){.lesson-introduction{padding:18px;margin-bottom:24px}.lesson-why{font-size:1.0625rem}.course-entry{align-items:flex-start;flex-direction:column;gap:0}.course-nav{margin-bottom:12px;padding:10px 12px}.course-nav small{display:inline;margin-left:12px}}
+@media print{.course-entry,.course-nav,.lesson-introduction{display:none!important}}

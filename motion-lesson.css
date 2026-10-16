@@ -1,0 +1,155 @@
+/* Mathematical dark canvas inside the existing paper laboratory. */
+.motion-live-lab .experiment > .panel-top h2 { font-size: 1.25rem; letter-spacing: -.015em; }
+.motion-lesson-instruction { margin: 0 0 16px; color: var(--muted); font-size: .9375rem; max-width: 76ch; }
+.motion-views { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 6px; }
+.motion-views button { display: flex; align-items: center; gap: 8px; min-height: 48px; min-width: 0; padding: 10px; background: var(--paper); text-align: left; font-size: .875rem; }
+.motion-views button[aria-pressed=true] { border-color: var(--blue); background: var(--mint); box-shadow: inset 0 -3px var(--blue); color: var(--blue); font-weight: 700; }
+.motion-view-number { color: var(--red); font-size: .75rem; font-variant-numeric: tabular-nums; font-weight: 400; }
+.motion-presets { display: flex; align-items: center; flex-wrap: wrap; gap: 6px 8px; padding: 12px 0 16px; }
+.motion-preset-label { margin-right: 4px; color: var(--muted); font-size: .8125rem; }
+.motion-presets button { font-size: .8125rem; min-height: 40px; padding: 8px 10px; color: var(--blue); border-color: var(--line); }
+#scene.motion-visual { background: #101720; background-image: none; border: 1px solid #263547; border-radius: 3px; }
+#scene.motion-visual text { font-family: Arial, Helvetica, sans-serif; }
+.motion-stage-caption { padding: 16px 20px; background: #f3f6fc; border-inline-start: 2px solid var(--blue); margin-top: 12px; }
+.motion-stage-caption h3 { font-size: 1rem; margin: 0 0 6px; }
+.motion-stage-caption p { font-size: .875rem; color: var(--muted); margin: 0; line-height: 1.6; max-width: 85ch; }
+.motion-live-lab .parameters { position: sticky; top: 20px; }
+.motion-live-lab .equations { border-left-color: var(--blue); }
+@media (max-width: 1250px) { .motion-live-lab .parameters { position: static; } }
+@media (max-width: 760px) {
+  .motion-views { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .motion-views button { padding-inline: 8px; gap: 6px; }
+  .motion-stage-caption { padding: 14px 16px; }
+  .motion-presets button { min-height: 44px; }
+}
+@media (max-width: 380px) { .motion-views { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media print { .motion-lesson-tools, .motion-stage-caption { display: none !important; } }
+/* Force tips are the primary controls; the adjacent panel uses numeric values. */
+.force-direct-tools{padding:16px 0 18px;border-top:1px solid var(--line)}
+.force-direct-tools[hidden]{display:none}
+.force-direct-help{font-size:.9375rem;margin:0 0 12px;max-width:80ch}
+.force-direct-row{display:flex;align-items:flex-end;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.force-chooser{display:flex;gap:6px;flex-wrap:wrap}
+.force-chooser button{min-height:44px;font-size:.875rem;border-color:var(--line)}
+.force-chooser button[aria-pressed=true]{border-color:var(--blue);background:var(--mint);box-shadow:inset 0 -3px var(--blue);color:var(--blue);font-weight:700}
+.force-hold-label{font-size:.8125rem;display:flex;align-items:center;gap:10px;color:var(--muted)}
+.force-hold-label select{min-height:44px;max-width:100%;font-size:.875rem}
+.force-direct-rule{font-size:.875rem;margin:12px 0 0;color:var(--blue)}
+.force-keyboard-tools{padding:0;margin-top:12px;background:none;font-size:.8125rem}
+.force-keyboard-tools summary{min-height:32px}
+.force-keyboard-tools p{max-width:78ch;margin:8px 0 12px}
+.force-nudge-pad{display:flex;flex-wrap:wrap;gap:8px}
+.force-nudge-pad button{min-height:44px;font-size:.8125rem}
+.force-direct-status{font-size:.8125rem;color:var(--muted);font-variant-numeric:tabular-nums;margin:12px 0 0;min-height:1.4em}
+#scene.force-drag-scene{touch-action:pan-y;user-select:none}
+.force-drag-handle{cursor:grab;touch-action:none;outline:none}
+.force-dragging .force-drag-handle{cursor:grabbing}
+.force-drag-handle:hover .force-handle-ring{stroke-width:3}
+.force-drag-handle:focus-visible .force-handle-ring{stroke:#fff;stroke-width:5;stroke-dasharray:3 3}
+.force-value-controls{display:grid;gap:16px}
+.force-values-help{font-size:.8125rem;line-height:1.5;margin:0;color:var(--muted)}
+.force-value-group{margin:0;padding:12px 0 0;border:0;border-top:1px solid var(--line);min-width:0}
+.force-value-group legend{font-size:.9375rem;font-weight:700;padding:0 12px 0 0}
+.force-value-group label{display:flex;align-items:center;gap:8px;justify-content:space-between;margin-top:8px;font-size:.875rem}
+.force-value-group input{width:92px;min-height:44px;margin-left:auto}
+.force-value-group .unit-label{width:16px;text-align:right}
+.force-xy-readout{font-size:.8125rem;color:var(--muted);font-variant-numeric:tabular-nums;margin:10px 0 0}
+.force-resultant-note{font-size:.8125rem;line-height:1.5;color:var(--muted);margin:8px 0 0}
+@media(max-width:760px){.force-direct-row{align-items:flex-start;gap:12px}.force-hold-label{flex-wrap:wrap}.force-value-controls{grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}.force-values-help{grid-column:1/-1}.force-value-group label{flex-wrap:wrap;justify-content:flex-start;gap:4px}.force-value-group input{width:100%;margin:0}.force-value-group .unit-label{width:auto}.force-xy-readout{line-height:1.6}.force-direct-status{line-height:1.6}}
+@media(max-width:480px){.force-value-controls{grid-template-columns:1fr}.force-value-group label{flex-wrap:nowrap}.force-value-group input{width:100px;margin-left:auto}.force-value-group .unit-label{width:16px}.force-xy-readout{line-height:1.4}}
+@media print{.force-direct-tools{display:none}}
+.force-value-group input{border:1px solid var(--line);border-radius:var(--radius);padding:8px 10px;background:var(--paper);color:var(--ink);font-variant-numeric:tabular-nums}
+.force-value-group input:disabled{background:#f2f4f7;color:var(--muted)}
+.force-working-toggle{display:flex;align-items:center;gap:10px;min-height:44px;font-size:.875rem;width:fit-content;margin-top:12px;cursor:pointer}
+.force-working-toggle input{width:18px;height:18px;margin:0;accent-color:var(--blue)}
+.force-direct-lab:not(.force-working-visible) .equations,.force-direct-lab:not(.force-working-visible) #readouts,.force-direct-lab:not(.force-working-visible) #modelNote,.force-direct-lab:not(.force-working-visible) .force-xy-readout{display:none}
+.force-simple-page #steps,.force-simple-page #assumptions,.force-simple-page #checkpoint,.force-simple-page #derive>.section-head{display:none}
+.force-direct-status{margin:10px 0 0;line-height:1.6}
+.force-direct-lab:not(.force-working-visible) .transport,.force-direct-lab:not(.force-working-visible) #hideValues{display:none}
+.force-handle-hit{touch-action:none;cursor:grab}
+body.force-interaction-page{overflow-anchor:none}
+/* Observe air resistance first; reveal qualitative force reasoning on demand. */
+.terminal-observation-tools{padding:12px 0 16px}
+.terminal-observation-tools[hidden]{display:none}
+.terminal-observe-prompt{font-size:.9375rem;max-width:78ch;margin:0 0 12px}
+.terminal-jumps{display:flex;gap:8px;flex-wrap:wrap}
+.terminal-jumps button{min-height:44px;font-size:.875rem}
+.terminal-explanation-toggle{display:flex;align-items:center;gap:10px;min-height:44px;margin-top:12px;font-size:.875rem;width:fit-content;cursor:pointer}
+.terminal-explanation-toggle input{height:18px;width:18px;margin:0;accent-color:var(--blue)}
+.terminal-observation-status{font-size:.875rem;line-height:1.6;color:var(--blue);margin:8px 0 0;min-height:3.2em}
+.terminal-controls{display:grid;gap:18px}
+.terminal-controls-help{font-size:.8125rem;line-height:1.6;margin:0;color:var(--muted)}
+.terminal-control{display:flex;align-items:center;gap:10px;flex-wrap:wrap;font-size:.875rem}
+.terminal-control>span:first-child{width:100%}
+.terminal-control input,.terminal-control select{min-height:44px;padding:8px 10px;border:1px solid var(--line);border-radius:var(--radius);background:var(--paper);color:var(--ink);font-family:Arial,Helvetica,sans-serif;min-width:0}
+.terminal-control select{width:100%}
+.terminal-control input{width:110px}
+.terminal-control input:disabled,.terminal-control select:disabled{background:#f2f4f7;color:var(--muted)}
+.terminal-live-lab #readouts,.terminal-live-lab #hideValues,.terminal-live-lab #substitution,.terminal-live-lab #challenge,.terminal-live-lab #showComponents,.terminal-live-lab #showProjections,.terminal-live-lab #showGhosts{display:none}
+.terminal-live-lab #displayOptions{display:none}
+.terminal-live-lab:not(.terminal-explaining) .equations,.terminal-live-lab:not(.terminal-explaining) #modelNote{display:none}
+.terminal-concept-page #steps,.terminal-concept-page #assumptions,.terminal-concept-page #checkpoint,.terminal-concept-page #derive>.section-head{display:none}
+.terminal-concept-page .run-value{display:none}
+.terminal-live-lab .transport{margin-top:12px}
+body.terminal-concept-page{overflow-anchor:none}
+@media(max-width:760px){.terminal-observation-status{min-height:4.8em}.terminal-controls{grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}.terminal-controls-help{grid-column:1/-1}}
+@media(max-width:480px){.terminal-controls{grid-template-columns:1fr}}
+@media print{.terminal-observation-tools{display:none}}
+.terminal-study-notes{margin:32px 0 8px;padding:24px 0;border-block:1px solid var(--line)}
+.terminal-study-notes[hidden]{display:none}
+.terminal-study-notes>h2{font-size:1.5rem;letter-spacing:-.015em;margin:6px 0 12px}
+.terminal-definition{max-width:82ch;font-size:1rem;line-height:1.65;margin:0 0 24px}
+.terminal-reading-stages{display:grid;gap:0;max-width:100ch}
+.terminal-reading-stages article{display:grid;grid-template-columns:36px minmax(0,1fr);gap:16px;padding:18px 0;border-top:1px solid var(--line)}
+.terminal-reading-number{font-size:.8125rem;color:var(--blue);padding-top:3px}
+.terminal-reading-stages h3{font-size:1.125rem;margin:0 0 6px}
+.terminal-reading-stages p{font-size:.9375rem;line-height:1.65;margin:0;max-width:78ch}
+.terminal-quick-check{border-left:2px solid var(--blue);padding:18px 20px;margin-top:20px;background:var(--mint)}
+.terminal-quick-check h3{font-size:1.125rem;margin:0 0 8px}
+.terminal-quick-check p{font-size:.9375rem;margin:0 0 12px}
+.terminal-check-actions{display:flex;gap:8px;flex-wrap:wrap}
+.terminal-check-actions button{min-height:44px;font-size:.875rem}
+.terminal-quick-check .terminal-check-feedback{margin:12px 0 0;max-width:80ch;line-height:1.6;color:var(--blue)}
+.terminal-concept-tip{padding:18px 0 0;font-size:.9375rem;max-width:84ch}
+.terminal-concept-tip p{margin:8px 0 0;line-height:1.65}
+.terminal-reading-source{font-size:.8125rem;color:var(--muted);margin:20px 0 0}
+@media(max-width:760px){.terminal-reading-stages article{grid-template-columns:26px minmax(0,1fr);gap:12px}.terminal-quick-check{padding:16px}}
+/* Collision: observe the pair before revealing signed momentum calculations. */
+.collision-observation-tools{padding:12px 0 16px}
+.collision-observation-tools[hidden],.collision-study-notes[hidden]{display:none}
+.collision-observe-prompt{font-size:.9375rem;line-height:1.6;max-width:78ch;margin:0 0 12px}
+.collision-jumps{display:flex;flex-wrap:wrap;gap:8px}
+.collision-jumps button{min-height:44px;font-size:.875rem}
+.collision-working-toggle{display:flex;align-items:center;gap:10px;min-height:44px;margin-top:12px;font-size:.875rem;width:fit-content;cursor:pointer}
+.collision-working-toggle input{height:18px;width:18px;margin:0;accent-color:var(--blue);flex:none}
+.collision-observation-status{font-size:.875rem;line-height:1.6;color:var(--blue);margin:8px 0 0;min-height:3.2em}
+.collision-controls{display:grid;gap:24px}
+.collision-controls-help{font-size:.8125rem;line-height:1.6;margin:0;color:var(--muted)}
+.collision-control{min-width:0}
+.collision-control label{display:flex;align-items:center;flex-wrap:wrap;gap:8px;font-size:.875rem}
+.collision-control label>span:first-child{width:100%}
+.collision-control input[type=number],.collision-control select{min-height:44px;min-width:0;padding:8px 10px;border:1px solid var(--line);border-radius:var(--radius);background:var(--paper);color:var(--ink);font-family:Arial,Helvetica,sans-serif}
+.collision-control input[type=number]{width:100px;font-variant-numeric:tabular-nums}
+.collision-control select{width:100%;font-size:.875rem}
+.collision-control input[type=range]{width:100%;margin-top:8px;min-height:28px}
+.collision-live-lab .parameters>.panel-top{gap:12px;flex-wrap:wrap;align-items:flex-start}
+.collision-live-lab #hideValues,.collision-live-lab #challenge,.collision-live-lab #displayOptions{display:none}
+.collision-live-lab:not(.collision-working-visible) .equations,.collision-live-lab:not(.collision-working-visible) #readouts,.collision-live-lab:not(.collision-working-visible) #modelNote{display:none}
+.collision-observe-page #steps,.collision-observe-page #assumptions,.collision-observe-page #checkpoint,.collision-observe-page #derive>.section-head,.collision-observe-page #investigation,.collision-observe-page .run-value{display:none}
+.collision-live-lab .transport{margin-top:12px}
+body.collision-observe-page{overflow-anchor:none}
+.collision-study-notes{margin:32px 0 8px;padding:24px 0;border-block:1px solid var(--line)}
+.collision-study-notes>h2{font-size:clamp(1.25rem,2vw,1.5rem);letter-spacing:-.015em;margin:6px 0 16px}
+.collision-definition{font-size:1rem;line-height:1.65;max-width:82ch;margin:0 0 24px}
+.collision-reading-stages{max-width:100ch}
+.collision-reading-stages article{display:grid;grid-template-columns:36px minmax(0,1fr);gap:16px;padding:20px 0;border-top:1px solid var(--line)}
+.collision-reading-number{font-size:.8125rem;color:var(--blue);padding-top:3px}
+.collision-reading-stages h3{font-size:1.125rem;margin:0 0 8px}
+.collision-reading-stages p{font-size:.9375rem;line-height:1.65;max-width:78ch;margin:0}
+.collision-concept-tip{padding:20px;margin-top:20px;background:var(--mint);border-left:2px solid var(--blue);font-size:.9375rem}
+.collision-concept-tip p{line-height:1.65;max-width:80ch;margin:8px 0 12px}
+.collision-concept-tip details{padding:0;margin:0;background:transparent}
+.collision-concept-tip summary{min-height:44px;align-content:center}
+@media(max-width:760px){.collision-controls{grid-template-columns:repeat(2,minmax(0,1fr));gap:24px 16px}.collision-controls-help{grid-column:1/-1}.collision-observation-status{min-height:4.8em}.collision-reading-stages article{grid-template-columns:28px minmax(0,1fr);gap:12px}}
+@media(max-width:480px){.collision-controls{grid-template-columns:1fr}.collision-concept-tip{padding:16px}}
+@media print{.collision-observation-tools{display:none}}

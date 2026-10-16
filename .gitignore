@@ -1,0 +1,18 @@
+# Generated releases, browser state and platform files
+dist/
+artifacts/
+output/
+.playwright-cli/
+.local/
+.DS_Store
+node_modules/
+__pycache__/
+*.pyc
+*.zip
+.env
+.env.*
+
+# Regenerable authoring/render caches; keep the source scenes and JSON timings.
+worked_media/source/math/
+worked_media/source/media/
+worked_media/source/Tex/

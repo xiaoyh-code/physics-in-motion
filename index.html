@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="icon" href="data:,">
+  <title>Physics in Motion — Interactive Mechanics Lab</title>
+  <link rel="stylesheet" href="vendor/katex/katex.min.css">
+  <link rel="stylesheet" href="style.css?v=20261015-lab4">
+  <link rel="stylesheet" href="worked.css?v=20261015-lab4">
+  <link rel="stylesheet" href="lesson-resources.css?v=20261016-lesson1">
+  <link rel="stylesheet" href="motion-lesson.css?v=20261016-collision2">
+  <link rel="stylesheet" href="visual-type.css?v=20261016-collision2">
+  <script defer src="vendor/katex/katex.min.js"></script>
+  <script defer src="vendor/katex/contrib/auto-render.min.js"></script>
+  <script defer src="visual-math.js?v=20261016-collision2"></script>
+  <script defer src="models.js?v=20261016-collision2"></script>
+  <script defer src="projectile.js?v=20261016-collision2"></script>
+  <script defer src="terminal-model.js?v=20261016-collision2"></script>
+  <script defer src="terminal-lesson.js?v=20261016-collision2"></script>
+  <script defer src="collision-model.js?v=20261016-collision2"></script>
+  <script defer src="collision-lesson.js?v=20261016-collision2"></script>
+  <script defer src="content.js?v=20261016-collision2"></script>
+  <script defer src="opening-content.js?v=20261016-collision2"></script>
+  <script defer src="force-drag-model.js?v=20261016-collision2"></script>
+  <script defer src="forces-interaction.js?v=20261016-collision2"></script>
+  <script defer src="app.js?v=20261016-collision2"></script>
+  <script defer src="motion-visual.js?v=20261016-collision2"></script>
+  <script defer src="displacement-visual.js?v=20261016-collision2"></script>
+  <script defer src="projectile-visual.js?v=20261016-collision2"></script>
+  <script defer src="forces-visual.js?v=20261016-collision2"></script>
+  <script defer src="terminal-visual.js?v=20261016-collision2"></script>
+  <script defer src="collision-visual.js?v=20261016-collision2"></script>
+  <script defer src="lab-features.js?v=20261016-collision2"></script>
+  <script defer src="motion-lesson.js?v=20261016-collision2"></script>
+  <script defer src="worked-data.js?v=20261016-lesson1"></script>
+  <script defer src="worked.js?v=20261016-collision2"></script>
+  <script defer src="resource-export.js?v=20261016-lesson1"></script>
+  <script defer src="lesson-resources-data.js?v=20261016-lesson1"></script>
+  <script defer src="lesson-resources.js?v=20261016-collision2"></script>
+  <script defer src="lesson-introductions-data.js?v=20261016-collision2"></script>
+  <script defer src="lesson-introductions.js?v=20261016-collision2"></script>
+</head>
+<body>
+<a class="skip-link" href="#main-content">Skip to lesson</a>
+<header class="app-header">
+  <a class="brand" href="#motion" aria-label="Physics in Motion home"><svg class="brand-mark" viewBox="0 0 30 30" width="30" height="30" aria-hidden="true"><path d="M4 25V5M4 25H26" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M7 21Q15 20 24 5" fill="none" stroke="#1757bd" stroke-width="2.5"/><circle cx="18" cy="14" r="3" fill="#b52643"/></svg><span>Physics in Motion</span></a>
+  <span class="edition">Form 4 <span aria-hidden="true">/</span> Term 1 <span aria-hidden="true">/</span> Mechanics lab</span>
+</header>
+<div class="shell">
+  <aside aria-label="Lab notebook">
+    <a class="course-nav" href="course-overview.html">00 · Start with the year plan<small>2026–27 / School → A Level</small></a>
+    <div class="nav-title">Topics</div>
+    <nav id="topics" aria-label="Physics topics"></nav>
+    <div class="aside-note">A model to explore.<br>A relationship to explain.</div>
+    <a href="GUIDE.md" class="source-link">Teacher guide & sources</a>
+  </aside>
+  <main id="main-content" tabindex="-1">
+    <div class="course-entry"><a href="course-overview.html">How this year's course connects to A Level →</a><span>Annual teaching plan · topic coverage · next steps</span></div>
+    <div class="topic-heading"><div class="kicker" id="group"></div><h1 id="title"></h1><p class="intro" id="lessonIntro">Change a parameter. Watch the motion. Explain the relationship.</p></div>
+    <section id="lessonIntroduction" class="lesson-introduction" aria-labelledby="lessonWhyHeading" hidden></section>
+    <nav id="lessonRoute" class="lesson-route" aria-label="This lesson" hidden></nav>
+    <button id="workedShortcut" hidden>Explore a worked question</button>
+    <div class="workspace" id="liveLab">
+      <section class="experiment" aria-label="Interactive experiment">
+        <div class="panel-top"><h2>Experiment</h2><button id="hideValues" class="quiet" aria-pressed="false">Hide readouts</button></div>
+        <svg id="scene" viewBox="0 0 900 410" role="img" aria-label="Live physics simulation"></svg>
+        <div class="transport">
+          <div class="playback-actions"><button id="play" class="primary">Play</button><button id="reset">Reset</button><button id="stepBack">−1 s</button><button id="stepForward">+1 s</button><button id="eventJump">Next event</button></div>
+          <label class="speed">Playback <select id="speed"><option value="0.25">0.25×</option><option value="0.5">0.5×</option><option value="1" selected>1×</option><option value="2">2×</option></select></label>
+          <label class="scrub"><span id="timeLabel">Time</span><input id="time" type="range" min="0" max="6" step="any" value="0"><output id="timeReadout">0.00 s</output></label>
+        </div>
+        <fieldset id="displayOptions"><legend>Show on diagram</legend><label><input id="showComponents" type="checkbox" checked> Components</label><label><input id="showProjections" type="checkbox" checked> Projections</label><label><input id="showGhosts" type="checkbox" checked> Previous runs</label></fieldset>
+        <div id="readouts" class="readouts"></div>
+        <div class="equations"><div class="label">Relationship & substitution</div><div id="equation"></div><div id="substitution"></div></div>
+        <p id="modelNote" class="model-note"></p>
+      </section>
+      <section class="parameters" aria-label="Experiment parameters">
+        <div class="panel-top"><h2>Parameters</h2><button id="defaults" class="quiet">Restore defaults</button></div>
+        <div id="controls"></div>
+        <details class="compare"><summary>Compare runs</summary><p class="muted">Keep a run, then change one variable to compare the outcomes.</p><div class="button-row"><button id="capture">Keep this run</button><button id="clearCompare" class="quiet">Clear runs</button></div><div id="comparison" class="muted">No runs kept yet.</div></details>
+        <details id="challenge" class="challenge"><summary>Predict & check</summary><p class="muted">Use your own parameters to create a calculation.</p><button id="newChallenge">Create a calculation</button><div id="challengeBody" aria-live="polite"></div></details>
+      </section>
+    </div>
+    <div class="tabs" role="tablist" aria-label="Learning tools"><button role="tab" id="tab-derive" aria-controls="derive" aria-selected="true">Derivation</button><button role="tab" id="tab-practice" aria-controls="practice" aria-selected="false">Exam practice</button><button role="tab" id="tab-data" aria-controls="data" aria-selected="false">Experiment log</button></div>
+    <section id="derive" class="learning" role="tabpanel" aria-labelledby="tab-derive">
+      <div id="investigation"></div>
+      <div class="section-head"><div><div class="kicker">From the model to the equation</div><h2>Build the derivation</h2></div><button id="revealStep">Reveal next step</button></div>
+      <p id="assumptions"></p><div id="steps"></div><div id="checkpoint" class="checkpoint"></div>
+    </section>
+    <section id="practice" class="learning" role="tabpanel" aria-labelledby="tab-practice" hidden>
+      <div class="section-head"><div><div class="kicker">Pearson Edexcel IAL style</div><h2>Apply your reasoning</h2></div><button id="print">Print this question</button></div>
+      <p class="muted practice-note">Original structured questions, not official Pearson papers. Marks assess method, reasoning and units. Numeric feedback checks only the stated value; use the mark scheme for the full response.</p>
+      <div id="workedSolution" hidden></div><div id="exam"></div>
+    </section>
+    <section id="data" class="learning" role="tabpanel" aria-labelledby="tab-data" hidden>
+      <div class="section-head"><div><div class="kicker">Test the relationship</div><h2>Record your investigation</h2></div><div class="button-row"><button id="record" class="primary">Record current state</button><button id="csv">Export CSV</button><button id="clearLog">Clear this log</button></div></div>
+      <p>Change one independent variable at a time. Record at least five readings. Explain which variables you controlled and whether your graph supports the model.</p>
+      <label>Your investigation notes<textarea id="labNotes" placeholder="Prediction, independent variable, controls, evidence and limitations"></textarea></label>
+      <div id="tableWrap"></div>
+      <div id="dataPlot" hidden><div class="plot-controls"><label>Horizontal axis <select id="plotX"></select></label><label>Vertical axis <select id="plotY"></select></label></div><svg id="scatter" viewBox="0 0 900 350" role="img" aria-label="Graph of recorded readings"></svg><p id="fit" class="muted"></p></div>
+      <p class="muted" id="logStatus" aria-live="polite"></p>
+    </section>
+    <section id="lessonResources" class="lesson-resources" aria-labelledby="resourcesHeading" hidden></section>
+    <footer><p>First-term mechanics and energy · <a href="GUIDE.md">Scope, assumptions & credits</a></p><p>Values are analytical model predictions, not experimental measurements. Diagrams may rescale; labelled values define the physical quantities. Formulas are rendered locally with KaTeX.</p></footer>
+  </main>
+</div>
+<dialog id="resourcePreview" class="resource-preview" aria-labelledby="previewHeading">
+  <div class="preview-header"><div><p class="kicker">WORK ON PAPER</p><h2 id="previewHeading"></h2></div><button id="closePreview" autofocus>Close preview</button></div>
+  <div class="preview-toolbar"><div class="button-row"><button id="previousPage" aria-label="Previous preview page">← Previous</button><output id="previewPage" aria-live="polite"></output><button id="nextPage" aria-label="Next preview page">Next →</button></div><a id="previewPDF" class="resource-link" target="_blank" rel="noopener">Open PDF ↗</a></div>
+  <figure class="preview-sheet"><img id="previewImage" alt=""><figcaption id="previewCaption"></figcaption></figure>
+  <p class="preview-help"><span id="previewInstructions"></span> <a id="previewFullImage" target="_blank" rel="noopener">Open full-size image ↗</a></p>
+</dialog>
+</body>
+</html>

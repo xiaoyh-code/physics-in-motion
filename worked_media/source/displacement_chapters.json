@@ -1,0 +1,22 @@
+[
+  {
+    "time": 0.0,
+    "title": "First leg: travel east"
+  },
+  {
+    "time": 9.5,
+    "title": "Second leg: travel west"
+  },
+  {
+    "time": 19.25,
+    "title": "Count signed area or total path length"
+  },
+  {
+    "time": 25.0,
+    "title": "Compare the two averages"
+  },
+  {
+    "time": 31.75,
+    "title": "End"
+  }
+]

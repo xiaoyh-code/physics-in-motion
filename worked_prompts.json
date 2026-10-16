@@ -1,0 +1,128 @@
+{
+  "motion": {
+    "question": "A trolley moves at 2.0 m s⁻¹ and accelerates uniformly at 1.5 m s⁻² for 4.0 s. Connect the motion to its velocity–time graph, derive the constant-acceleration equations, and calculate displacement.",
+    "steps": [
+      {
+        "title": "Connect the trolley and graph",
+        "prompt": "Watch the trolley and graph share one clock. Predict the final velocity and explain why the trolley covers more distance during each successive second.",
+        "answer": "The velocity rises uniformly from 2.0 to 8.0 m s⁻¹, while the trolley moves increasingly quickly. At t = 4.0 s, its position is x = 20 m. The video runs slowly; the displayed t is the physical time.",
+        "tex": "v=u+at=2.0+(1.5)(4.0)=8.0\\ \\mathrm{m\\,s^{-1}}"
+      },
+      {
+        "title": "Derive velocity from gradient",
+        "prompt": "Read the highlighted rise and run. Starting with acceleration = change in velocity ÷ time, rearrange to express the final velocity.",
+        "answer": "The rise is v − u = 6.0 m s⁻¹ and the run is 4.0 s, so the constant gradient is a = 1.5 m s⁻². Rearranging a = (v − u)/t gives v − u = at and then v = u + at.",
+        "tex": "a=\\frac{v-u}{t}\\quad\\Rightarrow\\quad v-u=at\\quad\\Rightarrow\\quad v=u+at"
+      },
+      {
+        "title": "Explain why area is displacement",
+        "prompt": "Match the narrow graph strip to the highlighted short section of the journey. What quantity does height × width represent, and what happens when all the strips are added?",
+        "answer": "Over a sufficiently short time Δt, displacement is approximately vΔt. Its units are (m s⁻¹) × s = m. Adding the small displacements gives the area under the velocity–time graph, which is signed displacement. The animated strips illustrate this idea; the exact area is calculated in the next step.",
+        "tex": "\\Delta s\\approx v\\Delta t,\\qquad s=\\text{area under the velocity–time graph}"
+      },
+      {
+        "title": "Turn two areas into SUVAT",
+        "prompt": "Identify the cyan rectangle and amber triangle. Replace the triangle height v − u using the gradient result, then add the two contributions.",
+        "answer": "The rectangle contributes ut = 8 m. The triangle contributes ½(v − u)t = ½at² = 12 m. Together s = ut + ½at² = 20 m. These are contributions to the same journey, rather than two successive stages of motion.",
+        "tex": "s=\\underbrace{ut}_{8\\,\\mathrm m}+\\underbrace{\\frac12(v-u)t}_{12\\,\\mathrm m}=ut+\\frac12at^2=20\\ \\mathrm m"
+      },
+      {
+        "title": "Compare gradient with area",
+        "prompt": "Find acceleration from the gradient and displacement from the trapezium area. Explain the different units and state when this SUVAT derivation is valid.",
+        "answer": "Gradient gives acceleration, 1.5 m s⁻². Area gives displacement, 20 m. The straight v–t line represents constant acceleration, which is required for these SUVAT equations. Velocity stays positive in this example, so distance equals displacement. A curved line has a changing gradient and needs another area method.",
+        "tex": "a=\\frac{8-2}{4}=1.5\\ \\mathrm{m\\,s^{-2}},\\qquad s=\\frac{2+8}{2}(4)=20\\ \\mathrm m"
+      }
+    ],
+    "pitfall": "This fixed worked example uses u = 2.0 m s⁻¹, a = 1.5 m s⁻² and t = 4.0 s. The live model can use different parameter settings. Graph area gives signed displacement; it equals distance here because velocity stays positive. The strip argument uses a short-time approximation; the rectangle and triangle give the exact area for this straight-line graph. SUVAT requires constant acceleration. Measurement uncertainty is practised separately in the worksheet."
+  },
+  "displacement": {
+    "question": "A robot travels east at 3.0 m s⁻¹ for 4.0 s and west at 2.0 m s⁻¹ for 3.0 s. Ignore the short turning interval. Take east as positive and compare displacement, distance, average velocity and average speed.",
+    "steps": [
+      {
+        "title": "Trace the eastward leg",
+        "prompt": "Watch the robot travel to the right. What position and signed graph area does it reach at 4.0 s?",
+        "answer": "The robot reaches x = +12 m. The area above the time axis is +12 m.",
+        "tex": "\\Delta x_1=(+3.0)(4.0)=+12\\ \\mathrm m"
+      },
+      {
+        "title": "Trace the westward leg",
+        "prompt": "Watch the robot reverse direction. Why is its second velocity–time area negative?",
+        "answer": "West is the negative direction. The second leg changes position by −6.0 m, leaving the robot at x = +6.0 m.",
+        "tex": "\\Delta x_2=(-2.0)(3.0)=-6.0\\ \\mathrm m"
+      },
+      {
+        "title": "Compare the two totals",
+        "prompt": "Compare the START and FINISH positions with the two shaded graph regions. Which areas cancel, and which must be added positively?",
+        "answer": "Displacement is +6.0 m east; total distance is 18 m. The returning leg partly cancels displacement but still adds to distance.",
+        "tex": "\\Delta x=12-6=+6.0\\ \\mathrm m,\\qquad d=12+6=18\\ \\mathrm m"
+      },
+      {
+        "title": "Use the same total time",
+        "prompt": "Divide each total by 7.0 s. Why are average speed and the magnitude of average velocity different?",
+        "answer": "Average speed is 2.57 m s⁻¹ and average velocity is +0.857 m s⁻¹. They use different numerators. These displayed values retain extra digits for comparison.",
+        "tex": "\\text{average speed}=\\frac{18}{7.0}=2.57\\ \\mathrm{m\\,s^{-1}},\\qquad \\bar v=\\frac{+6.0}{7.0}=+0.857\\ \\mathrm{m\\,s^{-1}}"
+      }
+    ],
+    "pitfall": "This question has two constant-velocity legs over 7.0 s. The live displacement simulation has one constant acceleration and a 6 s timeline, so it cannot reproduce this journey directly. Treat the turn as an idealised instantaneous velocity change; do not join the two velocity levels with a finite sloping interval or use a single SUVAT calculation for the whole journey."
+  },
+  "vectors": {
+    "question": "Two horizontal forces act on a model boat: 6.0 N east and 8.0 N north. Find the magnitude and direction of the resultant, then determine the third force needed for constant velocity.",
+    "steps": [
+      {
+        "title": "Build the component diagram",
+        "prompt": "Read the eastward and northward force arrows drawn from the same origin. Which components will the resultant have?",
+        "answer": "The joining diagonal is the resultant. Its perpendicular components are 6.0 N east and 8.0 N north.",
+        "tex": "R_x=6.0\\ \\mathrm N,\\qquad R_y=8.0\\ \\mathrm N"
+      },
+      {
+        "title": "Find the diagonal length",
+        "prompt": "Why is the resultant magnitude less than 6.0 + 8.0 N? Use the right-angled triangle.",
+        "answer": "The forces act in perpendicular directions. Pythagoras gives a resultant of 10 N.",
+        "tex": "R=\\sqrt{R_x^2+R_y^2}=\\sqrt{6.0^2+8.0^2}=10\\ \\mathrm N"
+      },
+      {
+        "title": "Measure from east",
+        "prompt": "Watch the angle arc start at the positive horizontal axis. Which component is opposite this angle?",
+        "answer": "The northward component is opposite. The resultant points 53.1° north of east.",
+        "tex": "\\theta=\\tan^{-1}\\!\\left(\\frac{8.0}{6.0}\\right)=53.1^\\circ\\ \\text{north of east}"
+      },
+      {
+        "title": "Balance the resultant",
+        "prompt": "Watch the third force point opposite to the resultant. What happens to the net force and acceleration when it is added?",
+        "answer": "A 10 N force opposite the resultant makes the net force zero. The boat then has zero acceleration and can maintain its existing velocity.",
+        "tex": "\\mathbf F_3=(-6.0\\,\\hat{\\mathbf i}-8.0\\,\\hat{\\mathbf j})\\ \\mathrm N,\\qquad \\sum\\mathbf F=0\\Rightarrow\\mathbf a=0"
+      }
+    ],
+    "pitfall": "The live vector model can reproduce this example using Force A = 6 N, Angle A = 0°, Force B = 8 N, Angle B = 90°. Playback constructs a force diagram; it does not show the boat's trajectory. Zero net force means constant velocity, which may be nonzero. The direction must state its reference axis."
+  },
+  "newton": {
+    "question": "A 4.0 kg trolley is pulled horizontally by 14 N. A constant resistance of 2.0 N opposes motion. Calculate its acceleration, connect an acceleration–pulling-force graph to mass, and identify the forces acting on the trolley.",
+    "steps": [
+      {
+        "title": "Read the opposing force arrows",
+        "prompt": "Take the pulling direction as positive. What remains when the resistance arrow is subtracted from the pulling-force arrow?",
+        "answer": "The resultant horizontal force is +12 N. Use the resultant, not the pulling force alone, in Newton's second law.",
+        "tex": "F_{\\mathrm{net}}=F_{\\mathrm{pull}}-F_{\\mathrm{resist}}=14-2.0=12\\ \\mathrm N"
+      },
+      {
+        "title": "Predict the change in velocity",
+        "prompt": "Divide the resultant by the trolley's mass. What does the answer say about the velocity change in each second?",
+        "answer": "The acceleration is +3.0 m s⁻², so velocity increases by 3.0 m s⁻¹ each second while these forces remain constant.",
+        "tex": "a=\\frac{F_{\\mathrm{net}}}{m}=\\frac{12}{4.0}=3.0\\ \\mathrm{m\\,s^{-2}}"
+      },
+      {
+        "title": "Observe a force sweep",
+        "prompt": "Follow the line for fixed mass and resistance as pulling force increases. What are the gradient and vertical intercept of this acceleration–force graph?",
+        "answer": "The gradient is 1/m = 0.25 kg⁻¹ and the intercept is −Fresist/m = −0.50 m s⁻². The trolley must still move in the original direction for the assumed resistance direction to remain valid.",
+        "tex": "a=\\frac{1}{m}F_{\\mathrm{pull}}-\\frac{F_{\\mathrm{resist}}}{m},\\qquad \\text{gradient}=\\frac{1}{m}=0.25\\ \\mathrm{kg^{-1}}"
+      },
+      {
+        "title": "Separate equilibrium from a third-law pair",
+        "prompt": "Compare the upward normal force and downward weight on the trolley. They balance vertically; why are they not a Newton’s third-law pair?",
+        "answer": "Both act on the trolley. Weight pairs with the trolley's gravitational force on Earth; the normal force pairs with the trolley's contact force on the track. Third-law partners act on different objects.",
+        "tex": "N-mg=0\\quad\\text{(vertical equilibrium)},\\qquad\\mathbf F_{A\\to B}=-\\mathbf F_{B\\to A}\\quad\\text{(third law)}"
+      }
+    ],
+    "pitfall": "The live lab above models vertical falling motion with speed-dependent drag. This worked example instead uses a horizontal trolley and constant resistance. The acceleration–pulling-force line assumes fixed mass and resistance while the trolley still moves forwards; the negative intercept represents deceleration, not a rule for friction after reversal. Force arrows are schematic. No initial velocity or trolley trajectory is assumed."
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "title": "2026–2027 Physics Annual Teaching Plan",
+  "schoolLevel": "Form 4",
+  "original": {
+    "file": "2026-2027_Physics_Annual_Teaching_Plan.docx",
+    "sourceFilename": "2627_PHY_Annual_Teaching_Plan_0828_F4BC.docx",
+    "sha256": "55c84ef0cab69be1735cc7b5731116ec8da2c6b8043c27ffc54e51f0f5904f3e",
+    "bytes": 68354,
+    "unchanged": true
+  },
+  "readingCopy": {
+    "file": "2026-2027_Physics_Annual_Teaching_Plan.pdf",
+    "label": "PDF reading copy — layout adapted",
+    "sha256": "32cf141243285bc0a926e97cded28a6a6b1215b6ceae467bd017a53649ed8822",
+    "bytes": 449046,
+    "pages": 15,
+    "pageSize": "A4 landscape",
+    "layoutChanges": [
+      "Traditional Chinese Kai font fallback supplied to the renderer.",
+      "Two long word equations on pages 12 and 13 use 8 pt italic text with the same original words and symbols so they fit their table cells."
+    ],
+    "contentPreserved": true
+  },
+  "preview": "2026-2027_Physics_Annual_Teaching_Plan_Preview.png",
+  "verifiedOn": "2026-10-16"
+}
